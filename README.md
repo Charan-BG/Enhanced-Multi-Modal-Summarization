@@ -30,10 +30,14 @@ This project is a powerful, **multi-modal summarization tool** leveraging LangCh
    ```bash
    streamlit run app.py
 
+
 ## 🔑 API Key Setup
+
 You need a Groq API key to access the models. Enter your API key in the Streamlit app sidebar.
 
+
 ## 📦 Requirements
+
 - Python 3.8+
 - streamlit
 - langchain
@@ -44,6 +48,7 @@ You need a Groq API key to access the models. Enter your API key in the Streamli
 go through requriments for more..
 
 ## ⚙️ Usage
+
 1. Set API Key: Enter your Groq API Key in the sidebar.
 2. Select a Model: Choose from multiple LLM options provided.
 3. Input Content:
@@ -64,18 +69,25 @@ go through requriments for more..
 
 
 ## 🛡️ Error Handling
+
 YouTube Loading Error: If a YouTube video fails to load, ensure the URL is correct or try another video.
 PDF Handling Error: If PDF loading fails, check the file format or try another document.
 
+
 ## 🤖 Future Enhancements
+
 Add support for audio-based insights using ASR (Automatic Speech Recognition).
 Extend to include more document formats like Word (.docx).
 Provide detailed topic distribution analysis.
 
+
 ## 📝 License
+
 This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
 
-💬 Feedback
+
+## 💬 Feedback
+
 If you encounter any issues or have suggestions, please open an issue on the GitHub repository or reach out via email.
 
 
