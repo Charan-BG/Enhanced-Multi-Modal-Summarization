@@ -19,14 +19,16 @@ This project is a powerful, **multi-modal summarization tool** leveraging LangCh
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/enhanced-langchain-summarizer.git
-   cd enhanced-langchain-summarizer ```
+   git clone https://github.com/Charan-BG/enhanced-langchain-summarizer.git
+   cd enhanced-langchain-summarizer
+   
 2. Install the required Python packages:
    ```bash
-   pip install -r requirements.txt ```
+   pip install -r requirements.txt 
+   
 3. Run the Streamlit app:
    ```bash
-   streamlit run app.py ```
+   streamlit run app.py
 
 ## 🔑 API Key Setup
 You need a Groq API key to access the models. Enter your API key in the Streamlit app sidebar.
@@ -59,18 +61,12 @@ go through requriments for more..
 | **Llama3-8b-8192**| Open-source Llama-based model.                   |
 | **Llama-3.1-70b** | Advanced model for complex summarization tasks.  |
 
-## 📝 Example
-Upload a PDF or provide a YouTube link, choose your preferences, and get a concise summary like this:
 
-    ```bash
-    LangChain simplifies the application lifecycle of large language models (LLMs) with development, productionization, and deployment features. Key components include LangGraph for graph-based agents and LangSmith 
-    for debugging and monitoring. ```
-
-🛡️ Error Handling
+## 🛡️ Error Handling
 YouTube Loading Error: If a YouTube video fails to load, ensure the URL is correct or try another video.
 PDF Handling Error: If PDF loading fails, check the file format or try another document.
 
-🤖 Future Enhancements
+## 🤖 Future Enhancements
 Add support for audio-based insights using ASR (Automatic Speech Recognition).
 Extend to include more document formats like Word (.docx).
 Provide detailed topic distribution analysis.
