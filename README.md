@@ -19,8 +19,8 @@ This project is a powerful, **multi-modal summarization tool** leveraging LangCh
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Charan-BG/enhanced-langchain-summarizer.git
-   cd enhanced-langchain-summarizer
+   git clone https://github.com/Charan-BG/Enhanced-Multi-Modal-Summarization.git
+   cd Enhanced-Multi-Modal-Summarization
    
 2. Install the required Python packages:
    ```bash
@@ -40,6 +40,7 @@ You need a Groq API key to access the models. Enter your API key in the Streamli
 - langchain_groq
 - langchain_community
 - PyPDF2 (for PDF handling)
+
 go through requriments for more..
 
 ## ⚙️ Usage
