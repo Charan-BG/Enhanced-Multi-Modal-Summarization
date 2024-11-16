@@ -2,7 +2,13 @@
 
 This project is a powerful, **multi-modal summarization tool** leveraging LangChain, Groq API, and Streamlit. It supports summarizing content from various sources, including **YouTube videos, websites, PDFs, and text files**, using advanced LLMs like Gemma, and Llama models.
 
-## 🚀 Features
+## 🚀 Live Demo
+
+Try the app here: [Launch App](https://your-deployment-url.com)
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-deployment-url.com)
+
+## ✨ Features
 
 - **Multi-Modal Summarization**:
   - Summarize content from YouTube videos, websites, PDFs, and plain text files.
@@ -14,6 +20,7 @@ This project is a powerful, **multi-modal summarization tool** leveraging LangCh
   - Supports models like Gemma-7b-It, Gemma2-9b-it, Llama3-8b-8192, and Llama-3.1-70b.
 - **Analytics and Insights**:
   - Keyword extraction and content analytics (word count, summary length).
+
 
 ## 🛠️ Installation
 
@@ -38,7 +45,7 @@ You need a Groq API key to access the models. Enter your API key in the Streamli
 
 ## 📦 Requirements
 
-- Python 3.8+
+- Python 3.10+
 - streamlit
 - langchain
 - langchain_groq

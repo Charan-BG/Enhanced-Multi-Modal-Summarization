@@ -11,7 +11,7 @@ import time
 
 # Streamlit App Configuration
 st.set_page_config(page_title="Enhanced LangChain Summarizer", page_icon="🦜")
-st.title(" Enhanced LangChain: Multi-Modal Summarizer 🦜")
+st.title(" Enhanced Lang🦜Chain: Multi-Modal Summarizer ")
 st.subheader("Summarize YouTube Videos, Websites, PDFs, or Text Files")
 
 # Sidebar for API Key and Customization
