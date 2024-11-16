@@ -8,6 +8,7 @@ from langchain_community.document_loaders import YoutubeLoader, UnstructuredURLL
 import re
 import tempfile
 import time
+from groq import GroqError
 
 # Streamlit App Configuration
 st.set_page_config(page_title="Enhanced LangChain Summarizer", page_icon="🦜")
@@ -17,6 +18,9 @@ st.subheader("Summarize YouTube Videos, Websites, PDFs, or Text Files")
 # Sidebar for API Key and Customization
 with st.sidebar:
     groq_api_key = st.text_input("Groq API Key", value="", type="password")
+
+
+    
     # Model Selection
     model_options = {
         "Gemma-7b-It": "A general-purpose 7B model.",
@@ -43,7 +47,16 @@ if uploaded_file:
         st.write(f"File '{uploaded_file.name}' successfully uploaded.")
 
 # Initialize LLM
-llm = ChatGroq(model=selected_model, groq_api_key=groq_api_key)
+# llm = ChatGroq(model=selected_model, groq_api_key=groq_api_key)
+llm = None
+if not groq_api_key.strip():
+    st.warning("To use the summarizer model, please enter your Groq API key in the sidebar.")
+else:
+    try:
+        llm = ChatGroq(model=selected_model, groq_api_key=groq_api_key)
+    except GroqError as e:
+        st.error(f"GroqError: {str(e)}")
+        st.stop()
 
 # Prompt Template for Summarization
 final_prompt_template = """
