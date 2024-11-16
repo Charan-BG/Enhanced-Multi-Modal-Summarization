@@ -32,7 +32,7 @@ with st.sidebar:
 
 # Input URL or File
 generic_url = st.text_input("URL (YouTube or Website)", label_visibility="visible")
-uploaded_file = st.file_uploader("Upload a PDF or Text File (Max 2 MB)", type=["pdf", "txt"], accept_multiple_files=False)
+uploaded_file = st.file_uploader("Upload a PDF or Text File (Max <3 MB)", type=["pdf", "txt"], accept_multiple_files=False)
 
 # Check file size limit (2 MB)
 if uploaded_file:
@@ -147,7 +147,7 @@ if st.button("Summarize Content"):
                     summary_length_choice = get_summary_length_choice(summary_length)
                     output_summary = ""
 
-                    final_documents = RecursiveCharacterTextSplitter(chunk_size=50, chunk_overlap=10).split_documents(docs)
+                    final_documents = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=500).split_documents(docs)
 
                     # Chain for Summarization
                     chain = load_summarize_chain(
