@@ -4,9 +4,9 @@ This project is a powerful, **multi-modal summarization tool** leveraging LangCh
 
 ## 🚀 Live Demo
 
-Try the app here: [Launch App](https://your-deployment-url.com)
+Try the app here: [Launch App](https://enhanced-multi-modal-summarizer.streamlit.app/)
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-deployment-url.com)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://enhanced-multi-modal-summarizer.streamlit.app/)
 
 ## ✨ Features
 
